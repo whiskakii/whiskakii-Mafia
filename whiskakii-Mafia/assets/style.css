@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Thin.ttf") format("truetype");
+	font-weight: 100;
+}
+
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Light.ttf") format("truetype");
+	font-weight: 200;
+}
+
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Middle.ttf") format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Italic.ttf") format("truetype");
+	font-style: italic;
+}
+
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("./fonts/BebasNeuePro-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Cali";
+    src: url("./fonts/Cali.otf") format("truetype");
+}
+
+
+html {
+	font-family:Bebas Nue;
+	background:transparent;
+
+    -webkit-touch-callout: none;
+
+	-webkit-user-select: none;
+
+	-khtml-user-select: none;
+
+	-moz-user-select: none;
+
+	-ms-user-select: none;
+
+	user-select: none;
+
+}
+
+
+body {
+    display: none;
+    background: url('./images/background.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    image-rendering: pixelated;
+    overflow: hidden;
+}
+
+.selection-Container {
+    margin: 13vw auto; 
+    width: 45vw;
+    height: 35vw;
+    filter: drop-shadow(0 0 3.5vw rgba(98, 0, 255, 0.781));
+}
+
+.selection-Type {
+    position: absolute;
+    margin:2vw 10vw auto;
+    width: 25vw;
+    height: 30vw;
+    background: url('./images/backgound-selection.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: drop-shadow(0 0 3.5vw rgba(98, 0, 255, 0.781));
+    
+}
+
+input {
+    position: absolute;
+    margin:15.5vw 5.2vw auto;
+    width: 14.5vw;
+    height: 3vw;
+    border: none;
+    background: rgb(26, 26, 26, 0.8);
+    /* text */
+    text-align: center;
+    font-size: 0.9vw;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+#selectionBtn-Create {
+    position: absolute;
+    margin:20vw 5vw auto;
+    width: 15vw;
+    height: 3vw;
+    background-color:rgb(26, 26, 26, 0.5);
+    border:0.15vw solid rgb(98, 0, 255);
+    border-radius: 0.2vw;
+    filter:drop-shadow(0 0 1vw black);
+    /* text */
+    font-family:Bebas Nue;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2.5vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: rgb(98, 0, 255);
+    /* animation */
+    transition: 0.3s;
+}
+
+#selectionBtn-Create:hover {
+    background-color: rgb(98, 0, 255);
+    box-shadow: 0 0 3vw rgb(98, 0, 255);
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#creation-Cost {
+    position: absolute;
+    margin:23.5vw 5vw auto;
+    width: 15vw;
+    height: 2vw;
+    background-color:rgb(26, 26, 26, 0.7);
+    /* text */
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 2vw;
+    font-size: 1vw;
+    color: white;
+}
+
+#cost,
+#currency
+{
+    color: gold;
+    text-shadow: 0 0 1.5vw goldenrod;
+}
+
+/* Mafia Panel */
+
+.mafia-Panel {
+    margin: 10vw auto; 
+    width: 35vw;
+    height: 40vw;
+    background: url('./images/background-panel.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: drop-shadow(0 0 3.5vw rgba(98, 0, 255, 0.781));
+}
+
+#mafia-Name {
+    position: absolute;
+    margin:7vw 5vw auto;
+    width: 25vw;
+    background: linear-gradient(90deg, transparent, rgb(14, 14, 14), transparent);
+    /* text */
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: rgb(132, 0, 255);
+    text-shadow: 0 0 1.5vw rgb(132, 0, 255);
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+    background-color: none;
+    border: none;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #25252500;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+    background-color: #b7b4b9b2;
+    border: 2px solid #8ee2c900;
+    border-radius: 2px;
+}
+
